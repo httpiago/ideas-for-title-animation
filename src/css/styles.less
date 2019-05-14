@@ -25,3 +25,21 @@ section > h2 {
   letter-spacing: 1px;
   margin: 0;
 }
+
+section#bar-effect {
+  .text {
+    visibility: hidden;
+  }
+
+  .bar {
+    transition: all 300ms ease;
+    background-color: @darkGrey;
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    z-index: 5;
+    top: 0;
+    right: 0;
+  }
+}
+
