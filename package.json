@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/httpiago/title-revelation-styles.git",
+  "homepage": "",
+  "author": "Iago Bruno <httpiago@gmail.com> (https://www.iagobruno.com)",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "less": "^3.9.0",
+    "parcel-bundler": "^1.12.3",
+    "scrollmonitor": "^1.2.4",
+    "typescript": "^3.4.5"
+  },
+  "license": "MIT"
+}
