@@ -112,3 +112,28 @@ section#word-selection {
   }
 }
 
+section#typin-effect {
+  .cursor {
+    border-left: 2px solid @darkGrey;
+    display: inline-block;
+    position: relative;
+    height: 76px;
+    top: 10px;
+    visibility: visible;
+  }
+
+  .cursor.blink {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+}
+
+
+@-webkit-keyframes blink {
+  from, to { visibility: hidden; }
+  50% { visibility: visible; }
+}
+@keyframes blink {
+  from, to { visibility: hidden; }
+  50% { visibility: visible; }
+}
