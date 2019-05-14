@@ -57,3 +57,44 @@ section#sliding-letters {
   }
 }
 
+section#text-trail {
+  background-color: @darkGrey;
+  overflow: hidden;
+
+  h2 {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+    span {
+      background-color: @darkGrey;
+      line-height: 90px;
+      padding-bottom: 9px;
+      position: absolute;
+      visibility: hidden;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+    }
+
+    span.outline {
+      -webkit-text-stroke: 1px #FFF;
+      color: transparent;
+    }
+    span.filled {
+      color: #FFF;
+    }
+
+    span.main {
+      position: relative;
+      display: block;
+      pointer-events: initial;
+      z-index: 10;
+    }
+  }
+}
+
