@@ -5,7 +5,7 @@ const navigation = document.querySelector('nav.navigation ul')!
 sections.forEach(section => {
   const li = document.createElement('li')
   const link = document.createElement('a')
-  link.href = `/#${section.id}`
+  link.href = `#${section.id}`
   link.innerText = section.id
 
   li.append(link)

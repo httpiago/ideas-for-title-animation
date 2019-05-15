@@ -1,10 +1,10 @@
 {
   "repository": "https://github.com/httpiago/title-revelation-styles.git",
-  "homepage": "",
+  "homepage": "https://httpiago.github.io/title-revelation-styles/",
   "author": "Iago Bruno <httpiago@gmail.com> (https://www.iagobruno.com)",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url https://httpiago.github.io/title-revelation-styles/",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist"
   },

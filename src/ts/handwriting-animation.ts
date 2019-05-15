@@ -9,7 +9,7 @@ const logoTag = document.querySelector('#handwriting-animation #bodymovin')
  */
 const animation = lottie.loadAnimation({
   container: logoTag,
-  path: '/bullet-journal-logo-animation-data.json',
+  path: 'bullet-journal-logo-animation-data.json',
   renderer: 'svg',
   loop: false,
   autoplay: false,
