@@ -9,21 +9,80 @@ body {
   color: @darkGrey;
 }
 
-section {
-  border-bottom: 1px solid #000;
-  position: relative;
-  height: 100vh;
-  padding: 0 74px;
-  display: flex;
-  align-items: center;
+a {
+  color: #4d00ee;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-section > h2 {
+header,
+section,
+footer {
   position: relative;
-  font-size: 76px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 700px;
+
+  .description {
+    font-size: 20px;
+    line-height: 28px;
+    opacity: .7;
+  }
+}
+
+nav.navigation {
+  position: fixed;
+  font-size: 16px;
+  z-index: 100;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0 8px;
+      margin: 0;
+    }
+  }
+}
+
+section {
+  border-top: 1px solid #000;
+  display: flex;
+  align-items: center;
+  padding: 0 74px;
+  height: 100vh;
+
+  h2 {
+    position: relative;
+    font-size: 76px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  &:before {
+    position: absolute;
+    content: attr(id);
+    opacity: .6;
+    font-size: 16px;
+    top: 2px;
+    left: 74px;
+  }
+}
+
+header,
+footer {
+  padding: 40px 80px;
 }
 
 section#bar-effect {
@@ -61,11 +120,16 @@ section#text-trail {
   background-color: @darkGrey;
   overflow: hidden;
 
+  &::before {
+    color: #FFF;
+    opacity: .7;
+  }
+
   h2 {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-size: 100px;
-    font-weight: bold;
+    font-weight: 400;
     position: relative;
     display: block;
     margin: 0 auto;
