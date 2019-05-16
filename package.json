@@ -4,12 +4,13 @@
   "author": "Iago Bruno <httpiago@gmail.com> (https://www.iagobruno.com)",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url https://httpiago.github.io/title-revelation-styles/",
+    "build": "del-cli dist && parcel build src/index.html --public-url https://httpiago.github.io/title-revelation-styles/",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "copy": "^0.3.2",
+    "del-cli": "^1.1.0",
     "gh-pages": "^2.0.1",
     "less": "^3.9.0",
     "lottie-web": "^5.5.2",
