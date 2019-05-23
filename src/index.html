@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>title-revelation-styles demo</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> 
+  <link rel="stylesheet" href="https://unpkg.com/odometer@0.4.8/themes/odometer-theme-minimal.css">
   <link rel="stylesheet" href="./css/styles.less">
 </head>
 <body>
@@ -33,7 +34,10 @@
     </section>
 
     <section id="sliding-letters">
-      <h2>Peter Pan</h2>
+      <h2>
+        <div class="background-number"></div>
+        <div class="text">Peter Pan</div>
+      </h2>
       <script src="./ts/sliding-letters.ts" defer></script>
     </section>
 

@@ -114,16 +114,29 @@ section#handwriting-animation {
 }
 
 section#sliding-letters {
-  h2 {
+  .text {
     position: relative;
     overflow: hidden;
     font-size: 84px;
+    display: block;
+    z-index: 10;
+
+    .letter {
+      transition: top 300ms ease;
+      position: relative;
+      top: 100%;
+    }
   }
 
-  .letter {
-    transition: top 300ms ease;
-    position: relative;
-    top: 100%;
+  .background-number {
+    position: absolute;
+    transform: scale(2);
+    transform-origin: left center;
+    overflow: hidden;
+    opacity: .1;
+    z-index: 5;
+    top: -2px;
+    left: -46px;
   }
 }
 
