@@ -9,7 +9,7 @@ It's been some time since I had some ideas for title animations (that maybe I wi
 
 - **yarn run start**: Starting [Parcel](https://github.com/parcel-bundler/parcel) in development mode with live-reload.
 - **yarn run build**: Create a production version of the site ready to be hosted.
-- **yarn run deploy**: Deploy site on Github Pages.
+- **yarn run deploy**: Deploy demonstration on Github Pages.
 
 ## License
 
