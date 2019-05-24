@@ -1,10 +1,11 @@
 {
-  "repository": "https://github.com/httpiago/title-revelation-styles.git",
-  "homepage": "https://httpiago.github.io/title-revelation-styles/",
-  "author": "Iago Bruno <httpiago@gmail.com> (https://www.iagobruno.com)",
+  "homepage": "https://httpiago.github.io/ideas-for-title-animation/",
+  "repository": "https://github.com/httpiago/ideas-for-title-animation.git",
+  "author": "Iago Bruno <httpiago@gmail.com> (https://www.iagobruno.com/)",
+  "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "del-cli dist && parcel build src/index.html --public-url https://httpiago.github.io/title-revelation-styles/",
+    "build": "del-cli dist && parcel build src/index.html --public-url https://httpiago.github.io/ideas-for-title-animation/",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d dist"
   },
@@ -19,6 +20,5 @@
     "parcel-plugin-static-files-copy": "^2.1.0",
     "scrollmonitor": "^1.2.4",
     "typescript": "^3.4.5"
-  },
-  "license": "MIT"
+  }
 }

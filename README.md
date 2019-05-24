@@ -1,8 +1,9 @@
-# title-revelation-styles
+# ideas-for-title-animation
 
 It's been some time since I had some ideas for title animations (that maybe I will not use them ever) so I decided to put them all together in this collection available for community.
 
-[![Online Demo](https://img.shields.io/badge/Online-Demo-brightgreen.svg)](https://httpiago.github.io/title-revelation-styles/)
+[![Online Demo](https://img.shields.io/badge/Online-Demo-brightgreen.svg)](https://httpiago.github.io/ideas-for-title-animation/)
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/httpiago/ideas-for-title-animation/)
 
 ## Commands
 
