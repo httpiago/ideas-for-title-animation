@@ -85,6 +85,33 @@ footer {
   padding: 40px 80px;
 }
 
+section#focus-effect {
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    transform: scale(0.6);
+    filter: blur(10px);
+    opacity: 0;
+    font-size: 85px;
+    font-weight: 500;
+    letter-spacing: -12px;
+    word-spacing: 0px;
+    transition-property: all;
+    transition-duration: 0ms;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+    &.visible {
+      transition-duration: 4s;
+      transform: scale(1);
+      filter: blur(0px);
+      opacity: 1;
+      letter-spacing: 2px;
+      word-spacing: 8px;
+    }
+  }
+}
+
 section#bar-effect {
   .text {
     visibility: hidden;
